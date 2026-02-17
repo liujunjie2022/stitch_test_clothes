@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#3d5a7f",
+                        "background-light": "#FAF8F5", // Warm Cream
+                        "background-dark": "#15191d",
+                        "raw-denim": "#2C3E50",
+                        "brass": "#C8965A",
+                        "indigo-light": "#E8EDF3",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<title>Jeans Collection</title>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .masonry-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-raw-denim min-h-screen">
+<!-- Top Navigation Bar -->
+<nav class="sticky top-0 z-50 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-md px-4 py-4 flex items-center justify-between border-b border-primary/5">
+<button class="p-2 -ml-2 text-raw-denim dark:text-white">
+<span class="material-icons-outlined">arrow_back_ios_new</span>
+</button>
+<h1 class="text-lg font-bold text-raw-denim dark:text-white tracking-tight">Jeans Collection</h1>
+<div class="flex gap-2">
+<button class="p-2 text-raw-denim dark:text-white">
+<span class="material-icons-outlined">tune</span>
+</button>
+<button class="p-2 text-raw-denim dark:text-white">
+<span class="material-icons-outlined">grid_view</span>
+</button>
+</div>
+</nav>
+<!-- Filter Bar -->
+<div class="overflow-x-auto hide-scrollbar flex gap-3 px-4 py-6">
+<button class="bg-primary text-white px-6 py-2.5 rounded-full whitespace-nowrap text-sm font-medium shadow-sm">All</button>
+<button class="bg-white dark:bg-gray-800 text-raw-denim dark:text-gray-200 border border-primary/10 px-6 py-2.5 rounded-full whitespace-nowrap text-sm font-medium">Slim Fit</button>
+<button class="bg-white dark:bg-gray-800 text-raw-denim dark:text-gray-200 border border-primary/10 px-6 py-2.5 rounded-full whitespace-nowrap text-sm font-medium">Relaxed</button>
+<button class="bg-white dark:bg-gray-800 text-raw-denim dark:text-gray-200 border border-primary/10 px-6 py-2.5 rounded-full whitespace-nowrap text-sm font-medium">Wide Leg</button>
+<button class="bg-white dark:bg-gray-800 text-raw-denim dark:text-gray-200 border border-primary/10 px-6 py-2.5 rounded-full whitespace-nowrap text-sm font-medium">High Rise</button>
+</div>
+<!-- Product Grid -->
+<main class="px-4 pb-24">
+<div class="masonry-grid">
+<!-- Product Card 1 -->
+<div class="flex flex-col gap-3">
+<div class="bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-sm aspect-[3/4] relative group">
+<img alt="Classic Straight Leg Jeans" class="w-full h-full object-cover" data-alt="Model wearing classic dark blue straight leg jeans" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyPQyt7wzAR-fOyXkBigRYG6_u3KOJ4m-MOt_Dy6XovzirHZQFnqjw0Mvh6sj1TW0zuxiyMfpcVGxLI0GDaP1ZRqhwx6tE7cyE1TJU1YcXCNKf10hvkVRSuUWWYPU8R6vwM1maf8lx0r1o4UAAOVX4Fd2ecyDFoeX2HiGXxGUGl0wer6A8-MN_9TyETG3I9iMwVdgXkaJdYAYLnpDrjc8D5_VW2WTTw0lpTN30-OF_nnAxzMsOrIbz7HIO3Y9C7lNF8dGMowY5cDk"/>
+<button class="absolute top-3 right-3 bg-white/80 backdrop-blur-sm p-1.5 rounded-full text-raw-denim">
+<span class="material-icons-outlined text-[20px]">favorite_border</span>
+</button>
+</div>
+<div class="px-1">
+<h3 class="text-sm font-semibold text-raw-denim dark:text-white truncate">Vintage Straight</h3>
+<div class="flex gap-1.5 my-1.5">
+<span class="w-3 h-3 rounded-full bg-[#1a2b44] border border-black/5"></span>
+<span class="w-3 h-3 rounded-full bg-[#4b6584] border border-black/5"></span>
+<span class="w-3 h-3 rounded-full bg-[#ced6e0] border border-black/5"></span>
+</div>
+<p class="text-brass font-bold text-base">$148.00</p>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="flex flex-col gap-3">
+<div class="bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-sm aspect-[4/5] relative group">
+<img alt="Selvedge Slim Denim" class="w-full h-full object-cover" data-alt="Detail of artisanal indigo selvedge denim texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC44ylbX-kfp5C1cGVuWq6neWHNoTdoORwmNY_W3RMCBBQfKdEyyo5_pIb8eKocE7ngAqMxG2tTDWnIsXh-P9EzbglqOJYQ16eoZ8nYjRMMbdcKZI72pn3xtTl4xwEbc2jkkOOfT3SAxuY7ih3Pmfp6j4zVCXR_Sc1FPERUCCLfUtnq5hsGfRXW5mhigx83zG2SOlapjBAlNGrxQu0I7xS9-N5v2oiC78x207PerOJIvNzeIlTyFO0VOSEmReyCYXysqyYN3HFpR98"/>
+<button class="absolute top-3 right-3 bg-white/80 backdrop-blur-sm p-1.5 rounded-full text-raw-denim">
+<span class="material-icons-outlined text-[20px]">favorite</span>
+</button>
+</div>
+<div class="px-1">
+<h3 class="text-sm font-semibold text-raw-denim dark:text-white truncate">Selvedge Slim</h3>
+<div class="flex gap-1.5 my-1.5">
+<span class="w-3 h-3 rounded-full bg-[#2c3e50] border border-black/5"></span>
+<span class="w-3 h-3 rounded-full bg-[#57606f] border border-black/5"></span>
+</div>
+<p class="text-brass font-bold text-base">$185.00</p>
+</div>
+</div>
+</div>
+<!-- Size Guide Banner -->
+<div class="w-full my-8 bg-primary/10 dark:bg-primary/20 py-4 px-6 rounded-2xl border border-primary/10 flex items-center justify-between">
+<span class="text-sm font-medium text-primary dark:text-indigo-200">Not sure about your size?</span>
+<button class="text-sm font-bold text-primary dark:text-indigo-100 flex items-center gap-1 uppercase tracking-wider">
+                Size Guide <span class="material-icons-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+<div class="masonry-grid">
+<!-- Product Card 3 -->
+<div class="flex flex-col gap-3">
+<div class="bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-sm aspect-[4/5] relative group">
+<img alt="High-Waist Flare" class="w-full h-full object-cover" data-alt="Model wearing light wash high waisted flare jeans" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiH3D8onWZJW-rbIGa_dIFVA2ak__ki9fOv47ZoM2_RpmrLUBYhvrJxHLsOsD8OynrgxsfccCuXKKVXWG0210b5XikhtsUHRnRqOdCYAYOzU__Cm_sLCT2YRIyPpulXLCRGPs-pkGGLU0fsv4t0HeP0JQYPQXpTe7zyLAlKvPkKxNL48wjsicrrD_SGSAXrLGN5CYsacRMuz4bu1wUkjVLpZo-NJBFdS3uNOaJl06L1rE1LKO-1b7fplafWlOciqHKFMW3PhZV2Jg"/>
+<button class="absolute top-3 right-3 bg-white/80 backdrop-blur-sm p-1.5 rounded-full text-raw-denim">
+<span class="material-icons-outlined text-[20px]">favorite_border</span>
+</button>
+</div>
+<div class="px-1">
+<h3 class="text-sm font-semibold text-raw-denim dark:text-white truncate">High-Waist Flare</h3>
+<div class="flex gap-1.5 my-1.5">
+<span class="w-3 h-3 rounded-full bg-[#a4b0be] border border-black/5"></span>
+<span class="w-3 h-3 rounded-full bg-[#747d8c] border border-black/5"></span>
+</div>
+<p class="text-brass font-bold text-base">$160.00</p>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="flex flex-col gap-3">
+<div class="bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-sm aspect-[3/4] relative group">
+<img alt="Utility Carpenter" class="w-full h-full object-cover" data-alt="Sand colored utility carpenter style jeans on model" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBYvBB7LV6eJ1p49GYNohCnTR-FwSp0H1RAHXC93XPRLmbU0aqFquVz0PpuyjeyLNMKOP2fJeE5-vSd-zHl-5B_AkQMHsJYwofYmgQHFoh8TkwxCEpO-6qxPRRBbU2h2X9GIooP8Udu6KcJHdoHBkDJ-fvwpi6hVJcvYyZGYXezRO_tyAeQbPexTtw086TRkT5f9sBSZoHMGfj6LKVzxqp2nxa1CJOLee_0HwHE_na5XeWFfi4-1a32PewJM9l1gLJBPLbw2BOsxU"/>
+<button class="absolute top-3 right-3 bg-white/80 backdrop-blur-sm p-1.5 rounded-full text-raw-denim">
+<span class="material-icons-outlined text-[20px]">favorite_border</span>
+</button>
+</div>
+<div class="px-1">
+<h3 class="text-sm font-semibold text-raw-denim dark:text-white truncate">Utility Carpenter</h3>
+<div class="flex gap-1.5 my-1.5">
+<span class="w-3 h-3 rounded-full bg-[#d1ccc0] border border-black/5"></span>
+<span class="w-3 h-3 rounded-full bg-[#84817a] border border-black/5"></span>
+</div>
+<p class="text-brass font-bold text-base">$155.00</p>
+</div>
+</div>
+</div>
+<!-- Show More Button -->
+<div class="mt-12 flex justify-center">
+<button class="border-2 border-primary text-primary px-10 py-3.5 rounded-full font-bold text-sm uppercase tracking-widest hover:bg-primary hover:text-white transition-colors duration-300">
+                Show More
+            </button>
+</div>
+</main>
+<!-- Bottom Tab Bar (Contextual for Mobile App) -->
+<div class="fixed bottom-0 left-0 right-0 bg-white/95 dark:bg-background-dark/95 backdrop-blur-lg border-t border-primary/10 px-6 py-4 flex justify-between items-center z-50">
+<button class="text-primary flex flex-col items-center">
+<span class="material-icons-outlined">home</span>
+</button>
+<button class="text-gray-400 flex flex-col items-center">
+<span class="material-icons-outlined">search</span>
+</button>
+<button class="text-gray-400 flex flex-col items-center">
+<span class="material-icons-outlined">shopping_bag</span>
+</button>
+<button class="text-gray-400 flex flex-col items-center">
+<span class="material-icons-outlined">person_outline</span>
+</button>
+</div>
+</body></html>

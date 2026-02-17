@@ -1,0 +1,9 @@
+{
+    "projectId": "5434606643451554313",
+    "projectTitle": "Denim Co. - Denim Clothing Store",
+    "screens": {
+        "home": "e78d86dca3bb48c7b680e81f5260b170",
+        "selection": "c4306db3cd4d4505817d8335c8082046",
+        "checkout": "c1ff474e8a714e9b97b44c93d84d56fe"
+    }
+}
